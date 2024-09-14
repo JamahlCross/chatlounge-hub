@@ -5,6 +5,7 @@ import Chat from '../components/Chat';
 import Search from '../components/Search';
 import Favorites from '../components/Favorites';
 import Payment from '../components/Payment';
+import UserProfile from '../components/UserProfile';
 
 const Index = () => {
   return (
@@ -29,7 +30,10 @@ const Index = () => {
       </div>
       <div className="mt-8 w-full max-w-md">
         <h2 className="text-2xl font-bold mb-4">Features</h2>
-        <Chat />
+        <UserProfile />
+        <div className="mt-4">
+          <Chat />
+        </div>
         <div className="mt-4">
           <Search />
         </div>
