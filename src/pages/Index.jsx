@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Chat from '../components/Chat';
 import Search from '../components/Search';
 import Favorites from '../components/Favorites';
+import Payment from '../components/Payment';
 
 const Index = () => {
   return (
@@ -19,6 +20,9 @@ const Index = () => {
         <Link to="/user-management">
           <Button className="w-full" variant="secondary">User Management</Button>
         </Link>
+        <Link to="/admin">
+          <Button className="w-full" variant="secondary">Admin Panel</Button>
+        </Link>
       </div>
       <div className="mt-8 w-full max-w-md">
         <h2 className="text-2xl font-bold mb-4">Features</h2>
@@ -28,6 +32,9 @@ const Index = () => {
         </div>
         <div className="mt-4">
           <Favorites />
+        </div>
+        <div className="mt-4">
+          <Payment />
         </div>
       </div>
     </div>
