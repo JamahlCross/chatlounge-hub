@@ -1,4 +1,4 @@
-import { HomeIcon, UserPlusIcon, LogInIcon, UsersIcon, MessageSquareIcon, SearchIcon, StarIcon, CreditCardIcon, ShieldIcon } from "lucide-react";
+import { HomeIcon, UserPlusIcon, LogInIcon, UsersIcon, MessageSquareIcon, SearchIcon, StarIcon, CreditCardIcon, ShieldIcon, LayoutDashboardIcon } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import SignUp from "./components/auth/SignUp.jsx";
 import Login from "./components/auth/Login.jsx";
@@ -8,6 +8,7 @@ import Search from "./components/Search.jsx";
 import Favorites from "./components/Favorites.jsx";
 import Payment from "./components/Payment.jsx";
 import AdminPanel from "./components/AdminPanel.jsx";
+import Dashboard from "./components/Dashboard.jsx";
 
 export const navItems = [
   {
@@ -63,5 +64,11 @@ export const navItems = [
     to: "/admin",
     icon: <ShieldIcon className="h-4 w-4" />,
     page: <AdminPanel />,
+  },
+  {
+    title: "Dashboard",
+    to: "/dashboard",
+    icon: <LayoutDashboardIcon className="h-4 w-4" />,
+    page: <Dashboard />,
   },
 ];

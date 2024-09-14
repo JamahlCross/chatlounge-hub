@@ -23,6 +23,9 @@ const Index = () => {
         <Link to="/admin">
           <Button className="w-full" variant="secondary">Admin Panel</Button>
         </Link>
+        <Link to="/dashboard">
+          <Button className="w-full" variant="secondary">Dashboard</Button>
+        </Link>
       </div>
       <div className="mt-8 w-full max-w-md">
         <h2 className="text-2xl font-bold mb-4">Features</h2>
