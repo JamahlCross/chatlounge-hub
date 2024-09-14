@@ -6,6 +6,7 @@ import Search from '../components/Search';
 import Favorites from '../components/Favorites';
 import Payment from '../components/Payment';
 import UserProfile from '../components/UserProfile';
+import Notifications from '../components/Notifications';
 
 const Index = () => {
   return (
@@ -42,6 +43,9 @@ const Index = () => {
         </div>
         <div className="mt-4">
           <Payment />
+        </div>
+        <div className="mt-4">
+          <Notifications />
         </div>
       </div>
     </div>
